@@ -33,7 +33,7 @@ builds:
 archives:
   - formats:
       - binary
-    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Goarm }}{{ .Goarm }}{{ end }}"
 
 changelog:
   sort: asc
