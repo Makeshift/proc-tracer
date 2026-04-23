@@ -23,9 +23,6 @@ jobs:
       - name: Install deps
         run: sudo apt install -y llvm clang libbpf-dev linux-libc-dev
 
-      - name: Set bpf include path
-        run: echo "BPF2GO_CFLAGS=-I/usr/include/$(dpkg-architecture -qDEB_HOST_MULTIARCH)" >> "$GITHUB_ENV"
-            
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v7
         with:
