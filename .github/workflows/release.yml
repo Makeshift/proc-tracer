@@ -20,7 +20,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v6
       
-      - run: sudo apt install -y llvm clang libbpf-dev
+      - run: sudo apt install -y llvm clang libbpf-dev linux-libc-dev
       
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v7
