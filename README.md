@@ -15,5 +15,5 @@ sudo go run . --json
 
 May require the following dependencies to build (Ubuntu):
 ```
-sudo apt install -y llvm clang libbpf-dev
+sudo apt install -y llvm clang libbpf-dev linux-libc-dev
 ```
