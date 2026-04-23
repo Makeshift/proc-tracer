@@ -12,3 +12,8 @@ sudo go run .
 # for jsons logging 1 json per line
 sudo go run . --json
 ```
+
+May require the following dependencies to build (Ubuntu):
+```
+sudo apt install -y llvm clang libbpf-dev
+```
